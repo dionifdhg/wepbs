@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conecta España - Citas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>💘 Conecta España</h1>
+    <p>Conoce gente de toda España</p>
+  </header>
+
+  <main>
+    <section id="registro">
+      <h2>Regístrate</h2>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="ciudad" placeholder="Ciudad" required>
+      <input type="text" id="interes" placeholder="Intereses" required>
+      <button onclick="registrarUsuario()">Crear perfil</button>
+    </section>
+
+    <section id="buscar">
+      <h2>Buscar personas</h2>
+      <input type="text" id="filtroCiudad" placeholder="Buscar por ciudad">
+      <button onclick="buscar()">Buscar</button>
+      <div id="resultados" class="perfiles"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
